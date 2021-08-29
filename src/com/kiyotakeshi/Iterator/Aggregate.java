@@ -1,0 +1,5 @@
+package com.kiyotakeshi.Iterator;
+
+public interface Aggregate {
+    public abstract Iterator iterator();
+}
