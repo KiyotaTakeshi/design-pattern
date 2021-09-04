@@ -10,7 +10,7 @@ public abstract class OsFactory {
         OsFactory factory = null;
 
         try {
-            // Class.forName(className).newInstance() でインスタンスの生成
+            // Class.forName(className).newInstance() でインスタンスの生成(引数なしコンストラクタが呼ばれる)
             // className -> "com.example.factory.linux.LinuxFactory"
             // Class.forName(className).newInstance() -> LinuxFactory@28
             // ある Class オブジェクトを受け取った際に、 Class クラスを使って動的にメソッド呼び出しを行うことをリフレクションと呼ぶ

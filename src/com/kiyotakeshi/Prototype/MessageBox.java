@@ -29,7 +29,7 @@ public class MessageBox implements Product {
         Product p = null;
         try {
             // 自身の複製を作成するメソッド
-            // インスタンスが持っているフィールドの値をそのまま新しいインスタンスにコピー
+            // インスタンスが持っているフィールドの値をそのまま新しいインスタンスにコピー(コンストラクタは呼ばれない)
             // フィールドの内容をそのままコピーする shallow copy のため、フィールドの先のインスタンスの中身までは考慮しない
             // Cloneable interface を実装する必要がある(スーパークラスの Product で実装)
             p = (Product) clone();
