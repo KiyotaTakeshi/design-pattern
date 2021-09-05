@@ -8,7 +8,7 @@ import java.util.List;
 public class Department extends Unit {
 
     private final String name;
-    private List<Unit> departmentList = new ArrayList<>();
+    private List<Unit> unitList = new ArrayList<>();
 
     public Department(String name) {
         this.name = name;
@@ -23,7 +23,7 @@ public class Department extends Unit {
     public void printList(String prefix) {
         System.out.println(prefix + "/" + this);
 
-        Iterator<Unit> it = departmentList.iterator();
+        Iterator<Unit> it = unitList.iterator();
         while (it.hasNext()){
             Unit unit = it.next();
             // 再帰的呼び出し
@@ -33,6 +33,6 @@ public class Department extends Unit {
 
     @Override
     protected void add(Unit unit) {
-        departmentList.add(unit);
+        unitList.add(unit);
     }
 }
